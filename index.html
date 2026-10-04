@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaheen Force | Official Cricket Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#facc15',
+                            500: '#D4AF37',
+                            600: '#b89228',
+                            glow: '#ffd700'
+                        },
+                        emerald: {
+                            800: '#063826',
+                            900: '#032519',
+                            950: '#01170f'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        teko: ['Teko', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #01170f;
+            color: #f3f4f6;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff176 0%, #D4AF37 50%, #ff8f00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+        }
+
+        .gold-border-glow:hover {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+            border: 1px solid rgba(212, 175, 55, 0.8);
+        }
+
+        .card-bg {
+            background: linear-gradient(180deg, rgba(6, 56, 38, 0.75) 0%, rgba(3, 37, 25, 0.95) 100%);
+            backdrop-filter: blur(12px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #01170f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #facc15;
+        }
+    </style>
+</head>
+<body class="bg-emerald-950 text-gray-100 antialiased selection:bg-gold-500 selection:text-black">
+
+    <header class="fixed top-0 right-0 left-0 z-50 bg-emerald-950/90 backdrop-blur-md border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold-600 via-gold-400 to-emerald-500 p-0.5 shadow-lg shadow-gold-500/20">
+                        <div class="w-full h-full bg-emerald-950 rounded-full flex items-center justify-center">
+                            <span class="text-2xl">🦅</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-black tracking-wider gold-gradient-text font-teko uppercase text-3xl leading-none">SHAHEEN FORCE</h1>
+                        <p class="text-[10px] text-emerald-400 font-bold tracking-widest uppercase -mt-1">Official Cricket Club</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-6 font-semibold text-xs tracking-wider uppercase">
+                    <a href="#hero" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Home</a>
+                    <a href="#leadership" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Leadership</a>
+                    <a href="#squad" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Squad</a>
+                    <a href="#matches" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Matches</a>
+                    <a href="#gallery" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Media Studio</a>
+                    <a href="#contact" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Contact Us</a>
+                </nav>
+
+                <!-- Quick Contacts Header CTA Buttons -->
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="https://wa.me/923333490665" target="_blank" class="bg-emerald-800 hover:bg-emerald-700 text-gold-400 border border-gold-500/40 font-bold text-xs uppercase tracking-wider px-3 py-2 rounded-full transition-all flex items-center gap-1.5" title="Manager Hassan Ali">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Manager</span>
+                    </a>
+                    <a href="https://wa.me/923032287086" target="_blank" class="bg-emerald-800 hover:bg-emerald-700 text-amber-300 border border-gold-500/40 font-bold text-xs uppercase tracking-wider px-3 py-2 rounded-full transition-all flex items-center gap-1.5" title="Editor Habib">
+                        <i class="fa-solid fa-video text-xs text-amber-400"></i>
+                        <span>Editor</span>
+                    </a>
+                    <a href="#contact" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-emerald-950 font-bold text-xs uppercase tracking-wider px-3.5 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-1.5">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                        <span>3 Phone Helplines</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Navigation Toggle Button -->
+                <div class="lg:hidden flex items-center gap-2">
+                    <a href="https://wa.me/923333490665" target="_blank" class="text-green-400 text-xl p-1.5">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobile-menu-btn" class="text-gold-400 text-2xl focus:outline-none p-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-emerald-900 border-b border-gold-500/30 px-4 pt-2 pb-6 space-y-3 font-semibold text-sm">
+            <a href="#hero" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-emerald-800">Home</a>
+            <a href="#leadership" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-emerald-800">Leadership</a>
+            <a href="#squad" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-emerald-800">Squad</a>
+            <a href="#matches" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-emerald-800">Matches & Fixtures</a>
+            <a href="#gallery" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-emerald-800">Media Studio</a>
+            <a href="#contact" class="block py-2 text-gold-400 font-bold">Contact Management (3 Official Numbers)</a>
+        </div>
+    </header>
+
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-800/40 via-emerald-950 to-emerald-950 pointer-events-none"></div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-900/80 border border-gold-500/40 text-gold-400 text-xs font-bold tracking-widest uppercase mb-6 shadow-xl">
+                <i class="fa-solid fa-trophy text-gold-400"></i>
+                <span>Shaheen Force Cricket Club</span>
+            </div>
+
+            <h1 class="text-5xl sm:text-7xl lg:text-9xl font-black tracking-tight mb-4 font-teko uppercase leading-none">
+                <span class="block text-white">RISE OF THE</span>
+                <span class="gold-gradient-text">SHAHEEN FORCE</span>
+            </h1>
+
+            <p class="text-lg sm:text-2xl text-emerald-300 font-bold italic my-4 max-w-3xl mx-auto tracking-wide">
+                "Our Flight, Our Victory!" 🦅🏏
+            </p>
+
+            <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-6 leading-relaxed font-normal">
+                Led on field by Captain <strong class="text-gold-400">Sultan Talha</strong>, managed efficiently by <strong class="text-gold-400">Hassan Ali</strong>, and documented in high definition by Official Media Editor <strong class="text-gold-400">Habib</strong>.
+            </p>
+
+            <!-- Multi-Contact Quick Banner -->
+            <div class="max-w-3xl mx-auto mb-8 p-4 sm:p-5 rounded-2xl card-bg border border-gold-500/40 shadow-xl text-left">
+                <div class="flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-headset text-base"></i>
+                    <span>Official Team Helpline & Contact Directory</span>
+                </div>
+                <p class="text-xs text-gray-300 mb-3">
+                    You can call or WhatsApp <strong>any of these three numbers</strong> for match bookings, video requests, team inquiries, or general details:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                    <a href="tel:+923333490665" class="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800 hover:border-gold-400 transition-all flex items-center justify-between">
+                        <div>
+                            <div class="text-[10px] text-emerald-400 font-bold uppercase">1. Manager Hassan</div>
+                            <div class="font-bold text-white">+92 333 3490665</div>
+                        </div>
+                        <i class="fa-solid fa-phone-volume text-gold-400"></i>
+                    </a>
+                    <a href="tel:+923032287086" class="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800 hover:border-gold-400 transition-all flex items-center justify-between">
+                        <div>
+                            <div class="text-[10px] text-amber-400 font-bold uppercase">2. Editor Habib</div>
+                            <div class="font-bold text-white">+92 303 2287086</div>
+                        </div>
+                        <i class="fa-solid fa-video text-gold-400"></i>
+                    </a>
+                    <a href="tel:+923002421897" class="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800 hover:border-gold-400 transition-all flex items-center justify-between">
+                        <div>
+                            <div class="text-[10px] text-blue-400 font-bold uppercase">3. Team Helpline</div>
+                            <div class="font-bold text-white">+92 300 2421897</div>
+                        </div>
+                        <i class="fa-solid fa-circle-info text-gold-400"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+                <a href="#squad" class="w-full sm:w-auto bg-gradient-to-r from-gold-500 via-gold-400 to-amber-500 hover:from-gold-400 hover:to-amber-400 text-emerald-950 font-extrabold text-sm uppercase tracking-wider px-8 py-4 rounded-xl shadow-xl hover:shadow-gold-500/20 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Explore Playing 11 Squad</span>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-emerald-900/80 hover:bg-emerald-800 text-gold-400 font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl border border-gold-500/40 hover:border-gold-400 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>View All 3 Contact Numbers</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16 pt-10 border-t border-emerald-800/40">
+                <div class="p-4 rounded-xl bg-emerald-900/40 border border-emerald-800/30">
+                    <div class="text-4xl font-black text-gold-400 font-teko leading-none">11</div>
+                    <div class="text-[11px] text-gray-400 uppercase tracking-widest mt-1 font-bold">Main Playing Squad</div>
+                </div>
+                <div class="p-4 rounded-xl bg-emerald-900/40 border border-emerald-800/30">
+                    <div class="text-4xl font-black text-gold-400 font-teko leading-none">3+</div>
+                    <div class="text-[11px] text-gray-400 uppercase tracking-widest mt-1 font-bold">Reserve Talent</div>
+                </div>
+                <div class="p-4 rounded-xl bg-emerald-900/40 border border-emerald-800/30">
+                    <div class="text-4xl font-black text-gold-400 font-teko leading-none">3</div>
+                    <div class="text-[11px] text-gray-400 uppercase tracking-widest mt-1 font-bold">Official Helplines</div>
+                </div>
+                <div class="p-4 rounded-xl bg-emerald-900/40 border border-emerald-800/30">
+                    <div class="text-4xl font-black text-gold-400 font-teko leading-none">PRO</div>
+                    <div class="text-[11px] text-gray-400 uppercase tracking-widest mt-1 font-bold">Media Production</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership" class="py-20 bg-emerald-900/30 border-y border-emerald-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold-400 font-bold tracking-widest text-xs uppercase">Core Pillars</span>
+                <h2 class="text-4xl sm:text-6xl font-black gold-gradient-text font-teko uppercase tracking-wide mt-1">Team Leadership & Management</h2>
+                <p class="text-gray-400 text-sm max-w-xl mx-auto">Get in touch directly with our leadership team for specific requests.</p>
+                <div class="w-20 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Captain Sultan Talha -->
+                <div class="card-bg rounded-2xl overflow-hidden gold-border-glow transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative h-72 bg-emerald-800 overflow-hidden flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/032519/facc15?text=Sultan+Talha+(Captain)" alt="Sultan Talha" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 right-4 bg-gold-500 text-emerald-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-md">
+                            <i class="fa-solid fa-crown"></i> Captain
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-black text-white group-hover:text-gold-400 transition-colors">SULTAN TALHA</h3>
+                        <p class="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-4">Team Captain & Tactical Lead</p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Sultan Talha leads Shaheen Force on the field with match strategy, tactical field settings, and winning team spirit.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-emerald-800/60 pt-4 text-xs text-gray-400">
+                            <span><i class="fa-solid fa-baseball text-gold-400 mr-1"></i> All-Rounder</span>
+                            <span><i class="fa-solid fa-shield text-gold-400 mr-1"></i> Captain #01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manager Hassan Ali -->
+                <div class="card-bg rounded-2xl overflow-hidden gold-border-glow transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative h-72 bg-emerald-800 overflow-hidden flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/032519/facc15?text=Hassan+Ali+(Team+Manager)" alt="Hassan Ali" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 right-4 bg-emerald-400 text-emerald-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-md">
+                            <i class="fa-solid fa-clipboard-user"></i> Team Manager
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-black text-white group-hover:text-gold-400 transition-colors">HASSAN ALI</h3>
+                        <p class="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">Manager & Match Booking</p>
+                        <p class="text-gold-400 font-bold text-sm mb-4">
+                            <i class="fa-solid fa-phone mr-1"></i> +92 333 3490665
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Handles team management, match bookings, ground coordination, and player trials/recruitment.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-emerald-800/60 pt-4 text-xs">
+                            <a href="https://wa.me/923333490665" target="_blank" class="text-green-400 hover:underline flex items-center gap-1 font-bold">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                            </a>
+                            <a href="tel:+923333490665" class="text-gold-400 hover:underline flex items-center gap-1 font-bold">
+                                <i class="fa-solid fa-phone text-xs"></i> Call Manager
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Official Editor Habib -->
+                <div class="card-bg rounded-2xl overflow-hidden gold-border-glow transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative h-72 bg-emerald-800 overflow-hidden flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/032519/facc15?text=Habib+(Official+Editor)" alt="Habib" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 right-4 bg-amber-500 text-emerald-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-md">
+                            <i class="fa-solid fa-video"></i> Official Editor
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-black text-white group-hover:text-gold-400 transition-colors">HABIB</h3>
+                        <p class="text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">Video & Visual Media Lead</p>
+                        <p class="text-amber-300 font-bold text-sm mb-4">
+                            <i class="fa-solid fa-phone mr-1"></i> +92 303 2287086
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Direct contact for match highlights, HD edits, photo banners, poster design, and media inquiries.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-emerald-800/60 pt-4 text-xs">
+                            <a href="https://wa.me/923032287086" target="_blank" class="text-green-400 hover:underline flex items-center gap-1 font-bold">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                            </a>
+                            <a href="tel:+923032287086" class="text-amber-300 hover:underline flex items-center gap-1 font-bold">
+                                <i class="fa-solid fa-phone text-xs"></i> Call Editor
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="squad" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-gold-400 font-bold tracking-widest text-xs uppercase">Roster Breakdown</span>
+            <h2 class="text-4xl sm:text-6xl font-black gold-gradient-text font-teko uppercase tracking-wide mt-1">Shaheen Force Squad</h2>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto">Explore the Main Playing 11 and reserve talent powering the team.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-3"></div>
+        </div>
+
+        <!-- Squad Category Filters -->
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <button class="squad-filter active bg-gold-500 text-emerald-950 font-bold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition-all" data-filter="all">All Squad</button>
+            <button class="squad-filter bg-emerald-900 text-gray-300 border border-emerald-800 hover:border-gold-400 font-semibold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition-all" data-filter="main">Main 11 Squad</button>
+            <button class="squad-filter bg-emerald-900 text-gray-300 border border-emerald-800 hover:border-gold-400 font-semibold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition-all" data-filter="reserve">Reserves / Extras</button>
+        </div>
+
+        <!-- Squad Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="squad-grid">
+            
+            <!-- 1. Sultan Talha (Captain) -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-gold-400 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Talha" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-gold-500/20 text-gold-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Captain</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Sultan Talha</h4>
+                        <p class="text-xs text-emerald-400">Main 11 • Captain</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Hassan Ali -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-gold-400 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Hassan+Ali" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Manager</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Hassan Ali</h4>
+                        <p class="text-xs text-emerald-400">Main 11 • Manager</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Habib -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-amber-400 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Habib" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-amber-500/20 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Editor</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Habib</h4>
+                        <p class="text-xs text-emerald-400">Main 11 • Official Editor</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Aashir -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Aashir" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Aashir</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Noor -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Noor" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Noor</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Osama -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Osama" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Osama</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Kashan -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Kashan" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Kashan</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Ahsan -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Ahsan" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Ahsan</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Zohaib -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Zohaib" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Zohaib</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Zain -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Zain" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Zain</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Hashir -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="main">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-800 border-2 border-emerald-700 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Hashir" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Player</span>
+                        <h4 class="font-bold text-lg text-white group-hover:text-gold-400 transition-colors">Hashir</h4>
+                        <p class="text-xs text-emerald-400">Main 11 Squad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reserve 1: Ali -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="reserve">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-950 border border-gray-600 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Ali" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Reserve</span>
+                        <h4 class="font-bold text-lg text-gray-200 group-hover:text-gold-400 transition-colors">Ali</h4>
+                        <p class="text-xs text-gray-400">Extra / Reserve</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reserve 2: Uzair -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="reserve">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-950 border border-gray-600 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Uzair" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Reserve</span>
+                        <h4 class="font-bold text-lg text-gray-200 group-hover:text-gold-400 transition-colors">Uzair</h4>
+                        <p class="text-xs text-gray-400">Extra / Reserve</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reserve 3: Kaka -->
+            <div class="player-card card-bg rounded-xl p-5 border border-emerald-800/60 hover:border-gold-500/60 transition-all group" data-category="reserve">
+                <div class="flex items-center gap-4 mb-1">
+                    <div class="w-16 h-16 rounded-full bg-emerald-950 border border-gray-600 overflow-hidden flex-shrink-0">
+                        <img src="https://placehold.co/150x150/032519/facc15?text=Kaka" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Reserve</span>
+                        <h4 class="font-bold text-lg text-gray-200 group-hover:text-gold-400 transition-colors">Kaka</h4>
+                        <p class="text-xs text-gray-400">Extra / Reserve</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 p-4 rounded-xl bg-emerald-900/40 border border-gold-500/30 text-center text-xs text-gray-300 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-circle-info text-gold-400 text-sm"></i>
+            <span><strong>Note:</strong> Shaheen Force continuously expands its roster. New players are added regularly through practice sessions and trial rotations!</span>
+        </div>
+    </section>
+
+    <section id="matches" class="py-20 bg-emerald-900/30 border-t border-emerald-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold-400 font-bold tracking-widest text-xs uppercase">Schedules & Fixtures</span>
+                <h2 class="text-4xl sm:text-6xl font-black gold-gradient-text font-teko uppercase tracking-wide mt-1">Match Centers</h2>
+                <p class="text-gray-400 text-sm max-w-xl mx-auto">Organized and coordinated directly by Team Management.</p>
+                <div class="w-20 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Practice Matches Portion -->
+                <div class="card-bg rounded-2xl p-6 gold-border-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-emerald-800/60 pb-4 mb-6">
+                            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+                                <i class="fa-solid fa-dumbbell"></i> Practice Matches
+                            </span>
+                            <span class="text-xs text-gray-400"><i class="fa-solid fa-user-gear text-gold-400 mr-1"></i> Intra-Squad Drills</span>
+                        </div>
+
+                        <div class="text-center py-12 px-4 my-4 bg-emerald-950/60 rounded-xl border border-dashed border-emerald-800">
+                            <div class="w-16 h-16 rounded-full bg-emerald-900 mx-auto flex items-center justify-center text-gold-400 text-2xl mb-4">
+                                <i class="fa-regular fa-calendar-plus"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Next Practice Session: To Be Announced</h3>
+                            <p class="text-xs text-gray-400 max-w-md mx-auto">
+                                Upcoming practice lineups and intra-squad schedules will be updated here by management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-emerald-950/80 p-3.5 rounded-lg border border-emerald-800/50 text-xs text-gray-400 flex items-center justify-between mt-4">
+                        <span>Status: <strong class="text-gold-400">Scheduling Next Session</strong></span>
+                        <span>Helpline: <strong>+92 333 3490665</strong></span>
+                    </div>
+                </div>
+
+                <!-- Matches vs External Teams Portion -->
+                <div class="card-bg rounded-2xl p-6 gold-border-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-emerald-800/60 pb-4 mb-6">
+                            <span class="bg-gold-500/20 text-gold-400 border border-gold-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+                                <i class="fa-solid fa-trophy"></i> Matches vs External Teams
+                            </span>
+                            <span class="text-xs text-gray-400"><i class="fa-solid fa-handshake text-gold-400 mr-1"></i> Opposition Fixtures</span>
+                        </div>
+
+                        <div class="text-center py-8 px-4 my-4 bg-emerald-950/60 rounded-xl border border-dashed border-emerald-800">
+                            <div class="w-16 h-16 rounded-full bg-emerald-900 mx-auto flex items-center justify-center text-gold-400 text-2xl mb-4">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Want to Challenge Shaheen Force?</h3>
+                            <p class="text-xs text-gray-300 max-w-md mx-auto mb-4">
+                                Contact Team Manager Hassan Ali or call any official number to book a ground and challenge our main 11.
+                            </p>
+                            <a href="https://wa.me/923333490665?text=Hi%20Hassan%20Ali,%20we%20want%20to%20challenge%20Shaheen%20Force%20for%20a%20match." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-amber-500 text-emerald-950 font-bold text-xs uppercase px-5 py-2.5 rounded-xl shadow-lg">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>Book Match on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-emerald-950/80 p-3.5 rounded-lg border border-emerald-800/50 text-xs text-gray-400 flex items-center justify-between mt-4">
+                        <span>Status: <strong class="text-emerald-400">Open for External Matches</strong></span>
+                        <a href="tel:+923333490665" class="text-gold-400 font-bold hover:underline">Call Hassan Ali →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-gold-400 font-bold tracking-widest text-xs uppercase">Habib's Media Studio</span>
+            <h2 class="text-4xl sm:text-6xl font-black gold-gradient-text font-teko uppercase tracking-wide mt-1">Video Edits & Banners</h2>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto">Edited exclusively by Official Media Editor Habib (+92 303 2287086).</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card-bg rounded-2xl overflow-hidden border border-emerald-800/50 group cursor-pointer" onclick="openMediaModal('Sultan Talha Batting Showcase', 'High-energy batting highlights edited by Habib (+92 303 2287086)')">
+                <div class="relative h-52 bg-emerald-900 overflow-hidden">
+                    <img src="https://placehold.co/600x400/032519/facc15?text=Sultan+Talha+Shot+Highlights" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+                        <div class="w-14 h-14 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center text-xl shadow-lg transform group-hover:scale-110 transition-all">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </div>
+                    </div>
+                    <span class="absolute bottom-2 right-2 bg-black/80 text-gold-400 text-[10px] font-bold px-2 py-0.5 rounded">02:30</span>
+                </div>
+                <div class="p-4 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-amber-300 font-bold">Editor Habib: +92 303 2287086</span>
+                        <h4 class="font-bold text-white text-base mt-1 group-hover:text-gold-400 transition-colors">Captain Sultan Talha's Best Shots</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-2xl overflow-hidden border border-emerald-800/50 group cursor-pointer" onclick="openMediaModal('Practice Session Highlights', 'High-tempo intra-squad practice match edit')">
+                <div class="relative h-52 bg-emerald-900 overflow-hidden">
+                    <img src="https://placehold.co/600x400/032519/facc15?text=Practice+Match+Highlights" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+                        <div class="w-14 h-14 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center text-xl shadow-lg transform group-hover:scale-110 transition-all">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </div>
+                    </div>
+                    <span class="absolute bottom-2 right-2 bg-black/80 text-gold-400 text-[10px] font-bold px-2 py-0.5 rounded">01:45</span>
+                </div>
+                <div class="p-4 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-amber-300 font-bold">Editor Habib: +92 303 2287086</span>
+                        <h4 class="font-bold text-white text-base mt-1 group-hover:text-gold-400 transition-colors">Practice Drills & Intra-Squad Action</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-2xl overflow-hidden border border-emerald-800/50 group cursor-pointer" onclick="openMediaModal('Shaheen Force Wallpapers', 'Official squad poster designed by Habib')">
+                <div class="relative h-52 bg-emerald-900 overflow-hidden">
+                    <img src="https://placehold.co/600x400/032519/facc15?text=Official+Team+Artwork" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+                        <div class="w-14 h-14 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center text-xl shadow-lg transform group-hover:scale-110 transition-all">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-amber-300 font-bold">Graphic Design: Habib</span>
+                        <h4 class="font-bold text-white text-base mt-1 group-hover:text-gold-400 transition-colors">Shaheen Force Official Team Banner</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-emerald-900/30 border-t border-emerald-800/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card-bg rounded-3xl p-8 sm:p-12 gold-border-glow shadow-2xl">
+                <div class="text-center mb-10">
+                    <span class="text-gold-400 font-bold tracking-widest text-xs uppercase">Get In Touch</span>
+                    <h2 class="text-4xl sm:text-5xl font-black gold-gradient-text font-teko uppercase tracking-wide">Official Contact Helplines</h2>
+                    <p class="text-gray-300 mt-2 text-sm max-w-2xl mx-auto">
+                        <strong>You can contact any of these three numbers for details, match bookings, media requests, or team inquiries.</strong>
+                    </p>
+                </div>
+
+                <!-- 3 Distinct Contact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    
+                    <!-- 1. Hassan Ali (Manager) -->
+                    <div class="p-6 rounded-2xl bg-emerald-950/80 border border-gold-500/30 hover:border-gold-400 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-emerald-800 text-gold-400 flex items-center justify-center text-lg mb-4">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">Match & Operations</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Hassan Ali</h3>
+                            <p class="text-xs text-gold-400 font-bold mb-3">Team Manager</p>
+                            <p class="text-xs text-gray-300 leading-relaxed mb-6">
+                                Match challenges, ground booking, game scheduling, and player trial applications.
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="https://wa.me/923333490665" target="_blank" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold text-xs py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>WhatsApp Manager</span>
+                            </a>
+                            <a href="tel:+923333490665" class="w-full bg-gold-500 hover:bg-gold-400 text-emerald-950 font-bold text-xs py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone text-xs"></i>
+                                <span>+92 333 3490665</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Habib (Official Editor) -->
+                    <div class="p-6 rounded-2xl bg-emerald-950/80 border border-gold-500/30 hover:border-gold-400 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-amber-900/60 text-amber-400 flex items-center justify-center text-lg mb-4">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Media & Video Edits</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Habib</h3>
+                            <p class="text-xs text-amber-300 font-bold mb-3">Official Media Editor</p>
+                            <p class="text-xs text-gray-300 leading-relaxed mb-6">
+                                HD video edits, player highlight clips, photo graphics, social media posts, and media design.
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="https://wa.me/923032287086" target="_blank" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold text-xs py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>WhatsApp Editor</span>
+                            </a>
+                            <a href="tel:+923032287086" class="w-full bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold text-xs py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone text-xs"></i>
+                                <span>+92 303 2287086</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3. General Inquiry Helpline -->
+                    <div class="p-6 rounded-2xl bg-emerald-950/80 border border-gold-500/30 hover:border-gold-400 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-blue-900/60 text-blue-400 flex items-center justify-center text-lg mb-4">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest">General Information</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Official Team Helpline</h3>
+                            <p class="text-xs text-blue-300 font-bold mb-3">Club Info & Details</p>
+                            <p class="text-xs text-gray-300 leading-relaxed mb-6">
+                                General team inquiries, squad details, practice information, and all other questions.
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="https://wa.me/923002421897" target="_blank" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold text-xs py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>WhatsApp Helpline</span>
+                            </a>
+                            <a href="tel:+923002421897" class="w-full bg-blue-500 hover:bg-blue-400 text-emerald-950 font-bold text-xs py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone text-xs"></i>
+                                <span>+92 300 2421897</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Direct Form Messaging -->
+                <form id="shaheen-form" onsubmit="handleFormSubmit(event)" class="space-y-6 pt-6 border-t border-emerald-800/60">
+                    <h4 class="text-center text-lg font-bold text-gold-400 uppercase tracking-wide mb-2">Send an Online Inquiry</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" required placeholder="Enter full name" class="w-full bg-emerald-950/80 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-400 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Phone / WhatsApp Number</label>
+                            <input type="tel" required placeholder="+92 300 0000000" class="w-full bg-emerald-950/80 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-400 transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Inquiry Type</label>
+                            <select class="w-full bg-emerald-950/80 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-400 transition-colors">
+                                <option value="hassan">Match Challenge / Booking (Manager Hassan Ali)</option>
+                                <option value="habib">Video Edits / Media Request (Editor Habib)</option>
+                                <option value="general">General Inquiry / Squad Details (+92 300 2421897)</option>
+                                <option value="join">Player Recruitment / Reserves Application</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Player Skill / Specialty (If applying)</label>
+                            <select class="w-full bg-emerald-950/80 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-400 transition-colors">
+                                <option value="batsman">Batsman</option>
+                                <option value="bowler">Fast / Spin Bowler</option>
+                                <option value="allrounder">All-Rounder</option>
+                                <option value="keeper">Wicketkeeper</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Your Message</label>
+                        <textarea rows="4" placeholder="Write your message here..." class="w-full bg-emerald-950/80 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-400 transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-gold-500 via-gold-400 to-amber-500 hover:from-gold-400 hover:to-amber-400 text-emerald-950 font-extrabold text-sm uppercase tracking-wider py-4 rounded-xl shadow-xl transition-all transform hover:scale-[1.01] flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Send Message To Team Management</span>
+                    </button>
+                </form>
+
+                <div id="form-alert" class="hidden mt-6 p-4 rounded-xl bg-emerald-900/80 border border-gold-400 text-gold-300 text-center text-xs font-semibold">
+                    <i class="fa-solid fa-circle-check text-base mr-2"></i>
+                    Message sent successfully! Our team management will respond to you shortly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Quick WhatsApp Dial Button -->
+    <div class="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2">
+        <a href="https://wa.me/923333490665" target="_blank" class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform" title="WhatsApp Manager Hassan (+92 333 3490665)">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer class="bg-emerald-950 border-t border-emerald-900 py-12 text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-xl">🦅</span>
+                        <span class="font-black text-lg text-white font-teko uppercase tracking-wider">SHAHEEN FORCE</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Official website of Shaheen Force Cricket Club. Soaring high with passion, discipline, and power!
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Official Helplines</h5>
+                    <ul class="space-y-2">
+                        <li>Manager Hassan: <a href="tel:+923333490665" class="text-gold-400 hover:underline">+92 333 3490665</a></li>
+                        <li>Editor Habib: <a href="tel:+923032287086" class="text-amber-300 hover:underline">+92 303 2287086</a></li>
+                        <li>Team Helpline: <a href="tel:+923002421897" class="text-blue-400 hover:underline">+92 300 2421897</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Quick Navigation</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#squad" class="hover:text-gold-400 transition-colors">Playing 11 Squad</a></li>
+                        <li><a href="#matches" class="hover:text-gold-400 transition-colors">Match Fixtures</a></li>
+                        <li><a href="#gallery" class="hover:text-gold-400 transition-colors">Habib's Media Studio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Connect With Us</h5>
+                    <div class="flex gap-3 text-sm">
+                        <a href="https://wa.me/923333490665" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-emerald-900 border border-emerald-800 flex items-center justify-center hover:text-gold-400 hover:border-gold-400 transition-all" title="WhatsApp Manager"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+923333490665" class="w-9 h-9 rounded-full bg-emerald-900 border border-emerald-800 flex items-center justify-center hover:text-gold-400 hover:border-gold-400 transition-all" title="Call Helpline"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://www.youtube.com/watch?v=zbWjDwqqNIU" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-emerald-900 border border-emerald-800 flex items-center justify-center text-red-500 hover:text-gold-400 hover:border-gold-400 transition-all shadow-md" title="Watch Shaheen Force Official YouTube Video"><i class="fa-brands fa-youtube text-lg"></i></a>
+                        <a href="https://wa.me/923032287086" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-emerald-900 border border-emerald-800 flex items-center justify-center hover:text-gold-400 hover:border-gold-400 transition-all" title="Editor Habib Video Studio"><i class="fa-solid fa-video text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-emerald-900/60 pt-6 flex flex-col sm:flex-row justify-between items-center text-gray-500">
+                <p>© 2026 Shaheen Force Official. All rights reserved.</p>
+                <p class="mt-2 sm:mt-0">Helplines: <span class="text-gold-400 font-bold">+92 333 3490665</span> | <span class="text-amber-300 font-bold">+92 303 2287086</span> | <span class="text-blue-400 font-bold">+92 300 2421897</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="media-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="card-bg max-w-2xl w-full rounded-2xl p-6 gold-border-glow relative">
+            <button onclick="closeMediaModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modal-title" class="text-xl font-bold text-gold-400 mb-1"></h3>
+            <p id="modal-desc" class="text-xs text-gray-300 mb-4"></p>
+            <div class="aspect-video bg-emerald-950 rounded-xl flex flex-col items-center justify-center border border-emerald-800 overflow-hidden">
+                <iframe id="modal-youtube-iframe" class="w-full h-full" src="https://www.youtube.com/embed/zbWjDwqqNIU" title="Shaheen Force Official Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="mt-4 text-center">
+                <a href="https://www.youtube.com/watch?v=zbWjDwqqNIU" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-2 rounded-lg transition-all">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Open directly in YouTube</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Squad Filtering Logic
+        const filterBtns = document.querySelectorAll('.squad-filter');
+        const playerCards = document.querySelectorAll('.player-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-gold-500', 'text-emerald-950', 'active');
+                    b.classList.add('bg-emerald-900', 'text-gray-300');
+                });
+
+                btn.classList.add('bg-gold-500', 'text-emerald-950', 'active');
+                btn.classList.remove('bg-emerald-900', 'text-gray-300');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                playerCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form Submission Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const alertBox = document.getElementById('form-alert');
+            alertBox.classList.remove('hidden');
+            document.getElementById('shaheen-form').reset();
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Media Modal Handler
+        function openMediaModal(title, desc) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = desc;
+            document.getElementById('media-modal').classList.remove('hidden');
+        }
+
+        function closeMediaModal() {
+            document.getElementById('media-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
